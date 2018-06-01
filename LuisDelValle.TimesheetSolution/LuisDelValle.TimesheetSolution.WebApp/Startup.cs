@@ -35,6 +35,7 @@ namespace LuisDelValle.TimesheetSolution.WebApp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IRestClient<Timesheet>, RestClient<Timesheet>>();
 
             services.AddMvc();
         }
