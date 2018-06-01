@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22D52B43-089A-4858-987E-06382141DACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuisDelValle.TimesheetSolution.WebApp", "LuisDelValle.TimesheetSolution.WebApp\LuisDelValle.TimesheetSolution.WebApp.csproj", "{58CFA66B-B86A-40BF-9569-F16F09A0E51F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuisDelValle.TimesheetSolution.WebApp", "LuisDelValle.TimesheetSolution.WebApp\LuisDelValle.TimesheetSolution.WebApp.csproj", "{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{3829AE73-AECF-4C93-834D-19D1BE798825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3829AE73-AECF-4C93-834D-19D1BE798825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3829AE73-AECF-4C93-834D-19D1BE798825}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58CFA66B-B86A-40BF-9569-F16F09A0E51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58CFA66B-B86A-40BF-9569-F16F09A0E51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58CFA66B-B86A-40BF-9569-F16F09A0E51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58CFA66B-B86A-40BF-9569-F16F09A0E51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
