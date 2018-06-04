@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LuisDelValle.TimesheetSolution.Abstractions;
+using LuisDelValle.TimesheetSolution.WebApi.Models;
+using LuisDelValle.TimesheetSolution.WebApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -23,7 +27,13 @@ namespace LuisDelValle.TimesheetSolution.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddEntityFrameworkSqlServer()
+                .AddDbContext<TimesheetDbContext>(options =>
+                options.UseSqlServer(Configuration.GetSection("TimesheetConnectionStrings")["DefaultConnection"]));
+
             services.AddMvc();
+
+            services.AddScoped<IDataService<Timesheet>, DataService<Timesheet>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
