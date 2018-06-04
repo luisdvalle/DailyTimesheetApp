@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using LuisDelValle.TimesheetSolution.Models;
 using System.Threading.Tasks;
 
-namespace LuisDelValle.TimesheetSolution.WebApp.Services
+namespace LuisDelValle.TimesheetSolution.Abstractions
 {
     public interface IRestClient<T>
     {
@@ -11,5 +9,7 @@ namespace LuisDelValle.TimesheetSolution.WebApp.Services
         string Path { get; set; }
 
         Task<T> GetResponseAsync();
+
+        Task<Response> PostAsync(T requestObject);
     }
 }
