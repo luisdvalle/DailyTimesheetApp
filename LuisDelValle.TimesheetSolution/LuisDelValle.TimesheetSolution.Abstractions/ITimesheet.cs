@@ -9,5 +9,6 @@ namespace LuisDelValle.TimesheetSolution.Abstractions
     {
         DateTime Date { get; set; }
         double Hours { get; set; }
+        string EmployeeId { get; set; }
     }
 }

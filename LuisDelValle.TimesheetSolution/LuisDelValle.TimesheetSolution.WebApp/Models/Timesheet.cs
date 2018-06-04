@@ -7,5 +7,6 @@ namespace LuisDelValle.TimesheetSolution.WebApp.Models
     {
         public DateTime Date { get; set; }
         public double Hours { get; set; }
+        public string EmployeeId { get; set; }
     }
 }
