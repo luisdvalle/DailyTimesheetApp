@@ -1,7 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using LuisDelValle.TimesheetSolution.Abstractions;
+using LuisDelValle.TimesheetSolution.Models;
+using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -12,7 +11,7 @@ namespace LuisDelValle.TimesheetSolution.WebApp.Services
         public string Host { get; set; }
         public string Path { get; set; }
 
-        private static HttpClient Client = new HttpClient();
+        public static HttpClient Client = new HttpClient();
 
         public async Task<T> GetResponseAsync()
         {
@@ -29,6 +28,15 @@ namespace LuisDelValle.TimesheetSolution.WebApp.Services
             }
 
             return null;
+        }
+
+        public async Task<Response> PostAsync(T requestObject)
+        {
+            var response = await Client.PostAsJsonAsync(Host + Path, requestObject);
+
+            Response timesheetResponse = await response.Content.ReadAsAsync<Response>();
+
+            return timesheetResponse;
         }
     }
 }

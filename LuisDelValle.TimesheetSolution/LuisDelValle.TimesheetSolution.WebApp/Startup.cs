@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using LuisDelValle.TimesheetSolution.WebApp.Data;
 using LuisDelValle.TimesheetSolution.WebApp.Models;
 using LuisDelValle.TimesheetSolution.WebApp.Services;
+using LuisDelValle.TimesheetSolution.Abstractions;
 
 namespace LuisDelValle.TimesheetSolution.WebApp
 {
@@ -35,7 +36,8 @@ namespace LuisDelValle.TimesheetSolution.WebApp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-            services.AddScoped<IRestClient<Timesheet>, RestClient<Timesheet>>();
+            services.AddSingleton<IRestClient<Timesheet>, RestClient<Timesheet>>();
+            services.AddScoped<ITimesheet, Timesheet>();
 
             services.AddMvc();
         }

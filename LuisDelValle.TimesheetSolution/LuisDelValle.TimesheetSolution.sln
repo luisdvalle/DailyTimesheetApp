@@ -9,7 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22D52B43-089A-4858-987E-06382141DACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuisDelValle.TimesheetSolution.WebApp", "LuisDelValle.TimesheetSolution.WebApp\LuisDelValle.TimesheetSolution.WebApp.csproj", "{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuisDelValle.TimesheetSolution.WebApp", "LuisDelValle.TimesheetSolution.WebApp\LuisDelValle.TimesheetSolution.WebApp.csproj", "{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuisDelValle.TimesheetSolution.Abstractions", "LuisDelValle.TimesheetSolution.Abstractions\LuisDelValle.TimesheetSolution.Abstractions.csproj", "{51FCF5F5-4A94-46B0-8A7B-5138E3809014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuisDelValle.TimesheetSolution.Models", "LuisDelValle.TimesheetSolution.Models\LuisDelValle.TimesheetSolution.Models.csproj", "{CFDB6850-695F-4D37-B7AF-3B473196C96D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,9 +29,21 @@ Global
 		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DEEAFCA-7E70-4B1C-A273-1B716C78663D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FCF5F5-4A94-46B0-8A7B-5138E3809014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FCF5F5-4A94-46B0-8A7B-5138E3809014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FCF5F5-4A94-46B0-8A7B-5138E3809014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FCF5F5-4A94-46B0-8A7B-5138E3809014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDB6850-695F-4D37-B7AF-3B473196C96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDB6850-695F-4D37-B7AF-3B473196C96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDB6850-695F-4D37-B7AF-3B473196C96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDB6850-695F-4D37-B7AF-3B473196C96D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51FCF5F5-4A94-46B0-8A7B-5138E3809014} = {7372BEDB-8871-4B7B-9F9D-E0EDEDC1880C}
+		{CFDB6850-695F-4D37-B7AF-3B473196C96D} = {7372BEDB-8871-4B7B-9F9D-E0EDEDC1880C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {827471B2-F6E8-42BE-8833-FD24B03ED970}

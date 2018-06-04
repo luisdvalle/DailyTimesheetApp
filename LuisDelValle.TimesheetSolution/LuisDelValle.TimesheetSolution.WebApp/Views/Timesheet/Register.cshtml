@@ -1,0 +1,22 @@
+﻿@model RegisterTimesheetViewModel
+
+<h2>Register your hours</h2>
+
+<form asp-action="Register" asp-controller="Timesheet" method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div class="form-group">
+        <label asp-for="Date"></label>
+        <input class="form-control" asp-for="Date" />
+        <span asp-validation-for="Date"></span>
+    </div>
+
+    <div>
+        <label asp-for="Hours"></label>
+        <input class="form-control" asp-for="Hours" />
+        <span asp-validation-for="Hours"></span>
+    </div>
+    <br />
+
+    <input class="btn btn-primary" type="submit" value="Submit" />
+</form>
