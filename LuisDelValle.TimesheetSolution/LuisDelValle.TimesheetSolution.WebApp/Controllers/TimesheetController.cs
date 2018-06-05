@@ -13,13 +13,13 @@ namespace LuisDelValle.TimesheetSolution.WebApp.Controllers
         private IConfiguration              _configuration;
         private IRestClient<Timesheet>      _restClient;
         private ITimesheet                  _timesheet;
-        private UserManager<IdentityUser>   _userManagerService;
+        private UserManager<ApplicationUser>   _userManagerService;
 
         public TimesheetController(
             IConfiguration configuration, 
             IRestClient<Timesheet> restClient, 
             ITimesheet timesheet,
-            UserManager<IdentityUser> userManagerService)
+            UserManager<ApplicationUser> userManagerService)
         {
             _configuration = configuration;
             _restClient = restClient;
